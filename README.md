@@ -6,7 +6,6 @@ Marketing homepage for HomeTrades, the AI-powered platform for real estate teams
 
 ```
 /
-├── wrangler.toml          # Cloudflare Pages config
 ├── public/
 │   ├── index.html         # Main homepage
 │   └── _redirects         # Cloudflare routing rules
@@ -15,11 +14,11 @@ Marketing homepage for HomeTrades, the AI-powered platform for real estate teams
 
 ## Deploying to Cloudflare Pages
 
-1. Connect this repository to Cloudflare Pages
-2. Set build command: `npx wrangler deploy` (or leave blank for static deploy)
-3. Set output directory: `public`
-4. Deploy
+In Cloudflare Pages dashboard:
+- Build command: (leave blank)
+- Build output directory: public
+- No wrangler.toml needed — this is a static site
 
 ## Local Development
 
-Open `public/index.html` directly in any browser — no build step required.
+Open public/index.html directly in any browser — no build step required.
